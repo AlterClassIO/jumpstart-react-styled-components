@@ -1,3 +1,4 @@
+import { useDarkMode } from './hooks';
 import styled, { keyframes, createGlobalStyle } from 'styled-components';
 import { Lightning } from './icons';
 
@@ -118,6 +119,8 @@ const Link = styled.a`
 `;
 
 function App() {
+  const [darkMode, setDarkMode] = useDarkMode();
+
   return (
     <>
       <GlobalStyle />
